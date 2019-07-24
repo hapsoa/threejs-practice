@@ -14,6 +14,16 @@ export default new Router({
       component: Home,
     },
     {
+      path: '/force-directed-graph',
+      name: 'force-directed-graph',
+      component: () => import(/* webpackChunkName: "about" */ './views/ForceDirectedGraph'),
+    },
+    {
+      path: '/marriage-contract',
+      name: 'marriage-contract',
+      component: () => import(/* webpackChunkName: "about" */ './views/MarriageContractNetwork'),
+    },
+    {
       path: '/about',
       name: 'about',
       // route level code-splitting
